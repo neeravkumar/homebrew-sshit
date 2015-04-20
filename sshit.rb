@@ -7,7 +7,7 @@ class Sshit < Formula
   sha1 "57ddd6a61d2235adb5d8def3290f8d595753fc45"
 
   def install
-    bin.install "sshit"
+    bin.install "src/sshit"
     prefix.install "LICENSE", "README.md"
     doc.install Dir["docs/*"]
     doc.install_symlink prefix/"README.md"
