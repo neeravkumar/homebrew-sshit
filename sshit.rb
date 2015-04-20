@@ -9,7 +9,6 @@ class Sshit < Formula
   def install
     bin.install "src/sshit"
     prefix.install "LICENSE", "README.md"
-    doc.install Dir["docs/*"]
     doc.install_symlink prefix/"README.md"
     man1.install "man/sshit.1"
   end
